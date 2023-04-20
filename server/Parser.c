@@ -120,28 +120,3 @@ char* URI_checker(struct Parser my_parser){
 
 };
 
-void modify_logger(struct Parser my_parser){
-
-
-    FILE *logger_FILE = fopen("logger.txt", "a+");
-    if (logger_FILE == NULL){
-        perror("No se pudo modificar el logger");
-    }else{
-        fputs("A ", logger_FILE);
-        fputs(my_parser.method, logger_FILE);
-        fputs(" was processed\n", logger_FILE);
-
-    }
-    fclose(logger_FILE);
-/*
-    fopen("logger.txt", "r");
-    printf("El contenido del logger es:\n");
-
-    while(!feof(logger_FILE)){
-        int char_leido = fgetc(logger_FILE);
-        printf("%c", char_leido);
-    };      
-    //printf("\n");
-    fclose(logger_FILE);
-*/
-}
