@@ -208,21 +208,33 @@ void* HTTP_handler(void* args){
         printf("Recibí un POST\n");
         char* content_type = strstr(temp_response, "Content-Type:");
         content_type = strtok(content_type,"\n");
-        content_type += 14;
+        content_type += 13;
         printf("Ruta mandada: %s\n",(*my_token).URI);
         printf("Content Type: %s\n", content_type);
+        response = "HTTP/1.1 200 OK\r\nContent-type: text/html\r\n\r\n";
+       // strcpy(response,temp2);
         
-        response = "HTTP/1.1 200 OK\r\n\r\n";
-        printf("Sent response: %s\n",response);
         
     //    char* body;
-        content_type = strtok(content_type, "\r\n\r\n");
+        content_type = strstr(content_type, "\r\n\r\n");
         content_type += 2; //BODY de la request      
        // while(temp_response != NULL){
        printf("Body: %s\n",content_type);
       //  temp_response = strtok(NULL, "\n\n");
       //  }
+    FILE* file = fopen("resources/error404.html", "r");
+
+	fseek(file, 0, SEEK_END);
+	long fsize = ftell(file);
+	fseek(file, 0, SEEK_SET);
+
+	char* temp = malloc(sizeof(char) * (fsize+1));
+    fread(temp,fsize,1,file);
+    
+    printf("Sent response: %s\n",response);
     send((*my_token).pclient_socket, response , sizeof(response), 0);
+    printf("Sent file: %s\n",temp);
+    send((*my_token).pclient_socket,temp,sizeof(temp),0);
 
     }else if(strcmp((*my_token).method, "HEAD") == 0){
         printf("Recibí un HEAD\n");
@@ -231,6 +243,7 @@ void* HTTP_handler(void* args){
     }
     close((*my_token).pclient_socket);
    // free(temp_response);
+   
     
 }   
     
