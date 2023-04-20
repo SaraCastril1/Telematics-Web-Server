@@ -25,9 +25,9 @@ struct Token{
 
 void* HTTP_handler(void* args){
     struct Token *my_token = (struct Token *)args;
-    temp_response = malloc((*my_token).sizeofrequest + 1);
-    memcpy(temp_response,(*my_token).request_line,(*my_token).sizeofrequest);
-    printf("TEMP RESPONSE ANTES: %s\n",temp_response);
+   // temp_response = malloc((*my_token).sizeofrequest + 1);
+ //   memcpy(temp_response,(*my_token).request_line,(*my_token).sizeofrequest);
+ //   printf("TEMP RESPONSE ANTES: %s\n",temp_response);
     (*my_token).method = strtok((*my_token).request_line, " ");
     (*my_token).URI = strtok(NULL, " ");
     (*my_token).version = strtok(NULL, " ");
@@ -206,20 +206,20 @@ void* HTTP_handler(void* args){
 
     }else if (strcmp((*my_token).method, "POST") == 0){
         printf("Recibí un POST\n");
-        char* content_type = strstr(temp_response, "Content-Type:");
-        content_type = strtok(content_type,"\n");
-        content_type += 13;
+     //   char* content_type = strstr(temp_response, "Content-Type:");
+    //    content_type = strtok(content_type,"\n");
+     //   content_type += 13;
         printf("Ruta mandada: %s\n",(*my_token).URI);
-        printf("Content Type: %s\n", content_type);
+     //   printf("Content Type: %s\n", content_type);
         response = "HTTP/1.1 200 OK\r\nContent-type: text/html\r\n\r\n";
        // strcpy(response,temp2);
         
         
     //    char* body;
-        content_type = strstr(content_type, "\r\n\r\n");
-        content_type += 2; //BODY de la request      
+    //    content_type = strstr(content_type, "\r\n\r\n");
+    //    content_type += 2; //BODY de la request      
        // while(temp_response != NULL){
-       printf("Body: %s\n",content_type);
+     //  printf("Body: %s\n",content_type);
       //  temp_response = strtok(NULL, "\n\n");
       //  }
     FILE* file = fopen("resources/error404.html", "r");
