@@ -52,6 +52,10 @@ En resumen, este proyecto tiene como objetivo profundizar en la capa de aplicaci
 
 ![Image text](https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/Diagrama%20de%20flujo.drawio.png)
 
+-Diagrama de paquetes 
+
+![Image text](https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/diagrama_de_paquetes.png)
+
 
 
 # **_Conclusiones_**
