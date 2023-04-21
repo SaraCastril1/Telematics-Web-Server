@@ -424,3 +424,227 @@ Date: Fri, 21 Apr 2023 8:15:42 GMT
  ERROR: HEAD requested on resources/img/test2/jpg---> File not found
 Date: Fri, 21 Apr 2023 8:16:4 GMT
  ERROR: HEAD requested on resources/img/test2.jpg---> File not found
+Date: Fri, 21 Apr 2023 8:22:2 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:22:41 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:39:8 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:39:16 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:39:23 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:39:26 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:39:36 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:39:38 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:42:4 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:42:10 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 8:42:16 GMT
+ INFO: POST requested on resources/img/test2.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:33:47 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:33:53 GMT
+ INFO: GET requested on resources/test1/test1.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:33:53 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:33:56 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:34:2 GMT
+ INFO: POST requested on register---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:34:40 GMT
+ INFO: GET requested on resources/test1/test1.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:34:40 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:36:22 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:36:30 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:36:31 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:36:33 GMT
+ INFO: GET requested on resources/test1/test1.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:36:33 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:45:29 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:45:29 GMT
+ ERROR: GET requested on img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:45:46 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:45:46 GMT
+ ERROR: GET requested on img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:45:48 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:45:48 GMT
+ ERROR: GET requested on img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:46:5 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:46:6 GMT
+ ERROR: GET requested on img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:46:38 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:46:38 GMT
+ ERROR: GET requested on ..resources/img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:46:39 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:46:39 GMT
+ ERROR: GET requested on ..resources/img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:47:0 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:47:0 GMT
+ ERROR: GET requested on resources/img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:47:16 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:47:16 GMT
+ ERROR: GET requested on resources/img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:47:39 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:47:39 GMT
+ ERROR: GET requested on resources/img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:47:39 GMT
+ ERROR: GET requested on favicon.ico---> File not found
+Date: Fri, 21 Apr 2023 9:47:45 GMT
+ ERROR: GET requested on resources/test1/test1.html---> File not found
+Date: Fri, 21 Apr 2023 9:47:45 GMT
+ ERROR: GET requested on resources/img/2017-12-19-19-22-29.jpg---> File not found
+Date: Fri, 21 Apr 2023 9:48:18 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:48:18 GMT
+ ERROR: GET requested on resources/img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:48:18 GMT
+ ERROR: GET requested on resources/img/2017-12-19-19-22-29.jpg---> File not found
+Date: Fri, 21 Apr 2023 9:48:33 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:48:33 GMT
+ ERROR: GET requested on resources/img/2017-12-19-19-22-29.jpg---> File not found
+Date: Fri, 21 Apr 2023 9:48:33 GMT
+ ERROR: GET requested on resources/img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:48:48 GMT
+ ERROR: GET requested on resources/index.html---> File not found
+Date: Fri, 21 Apr 2023 9:48:48 GMT
+ ERROR: GET requested on resources/img/foto_grupo.jpeg---> File not found
+Date: Fri, 21 Apr 2023 9:48:48 GMT
+ ERROR: GET requested on resources/img/2017-12-19-19-22-29.jpg---> File not found
+Date: Fri, 21 Apr 2023 9:51:1 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:1 GMT
+ INFO: GET requested on resources/img/foto_grupo.jpeg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:1 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:3 GMT
+ INFO: GET requested on resources/error404.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:3 GMT
+ INFO: GET requested on resources/error404.css---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:3 GMT
+ INFO: GET requested on resources/error404.css---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:7 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:10 GMT
+ INFO: GET requested on resources/test1/test1.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:10 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:14 GMT
+ INFO: GET requested on resources/test1/test1.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:14 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:16 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:51:27 GMT
+ INFO: POST requested on register---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:52:20 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:52:20 GMT
+ INFO: GET requested on resources/img/foto_grupo.jpeg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:52:20 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:59:31 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:59:31 GMT
+ INFO: GET requested on resources/img/foto_grupo.jpeg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:59:31 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:59:33 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 9:59:37 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:0:2 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:0:2 GMT
+ INFO: GET requested on resources/img/foto_grupo.jpeg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:0:2 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:0:3 GMT
+ INFO: GET requested on resources/descarga.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:1:4 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:1:4 GMT
+ INFO: GET requested on resources/img/foto_grupo.jpeg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:1:4 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:1:6 GMT
+ INFO: GET requested on resources/descarga.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:3:2 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:3:2 GMT
+ INFO: GET requested on resources/img/foto_grupo.jpeg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:3:2 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:3:3 GMT
+ INFO: GET requested on resources/descarga.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:3:16 GMT
+ INFO: GET requested on resources/descarga.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:3:18 GMT
+ INFO: GET requested on resources/Ingenieria_Economica.7z---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:5:55 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:5:55 GMT
+ INFO: GET requested on resources/img/foto_grupo.jpeg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:5:55 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:5:56 GMT
+ INFO: GET requested on resources/descarga.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:5:58 GMT
+ INFO: GET requested on resources/Ingenieria_Economica.7z---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:6:48 GMT
+ INFO: GET requested on resources/descarga.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:8:3 GMT
+ INFO: GET requested on resources/descarga.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:8:3 GMT
+ INFO: GET requested on resources/descarga.css---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:8:3 GMT
+ INFO: GET requested on resources/descarga.css---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:8:10 GMT
+ INFO: GET requested on resources/Ingenieria_Economica.7z---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:9:17 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:9:17 GMT
+ INFO: GET requested on resources/img/foto_grupo.jpeg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:9:17 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:10:51 GMT
+ INFO: GET requested on resources/test1/test1.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:10:52 GMT
+ INFO: GET requested on resources/img/2017-12-19-19-22-29.jpg---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:11:15 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:11:48 GMT
+ INFO: POST requested on register---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:12:12 GMT
+ INFO: GET requested on resources/error404.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:12:12 GMT
+ INFO: GET requested on resources/error404.css---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:12:12 GMT
+ INFO: GET requested on resources/error404.css---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:12:25 GMT
+ INFO: GET requested on resources/descarga.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:12:25 GMT
+ INFO: GET requested on resources/descarga.css---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:12:25 GMT
+ INFO: GET requested on resources/descarga.css---> Succesfully atended
+Date: Fri, 21 Apr 2023 10:12:28 GMT
+ INFO: GET requested on resources/Ingenieria_Economica.7z---> Succesfully atended

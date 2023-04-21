@@ -119,6 +119,10 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
         //response = "HTTP/1.1 200 OK\r\nContent-type: image/svg+xml\r\n\r\n";
         content_type = "Content-type: image/svg+xml\r\n\r\n";
     }
+    else if (strcmp(my_token.mime, ".7z") == 0 ){
+        //response = "HTTP/1.1 200 OK\r\nContent-type: application/x-7z-compressed\r\n\r\n";
+        content_type = "Content-type: application/x-7z-compressed\r\n\r\n";
+    }
     
     /* else if (strcmp(my_token.mime, ".aac") == 0){
         //response = "HTTP/1.1 200 OK\r\nContent-type: audio/aac\r\n\r\n";
