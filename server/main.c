@@ -31,8 +31,11 @@ struct Token{
 
 
 void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
-    //temp_response = malloc(strlen(request_line));
-    //strcpy(temp_response, request_line);
+    printf("request_line dentro de la funcion, antes del malloc: %s\n",request_line);
+  //  temp_response = malloc(sizeof(request_line)*100);
+   // printf("size of request_line: %i\n",sizeof(request_line));
+   // memcpy(temp_response, request_line,sizeof(request_line));
+ //   printf("Temp response dentro de la funcion, despues del memcpy: %s\n",temp_response);
     my_token.method = strtok(request_line, " ");
     my_token.URI = strtok(NULL, " ");
     my_token.version = strtok(NULL, " "); 
@@ -390,27 +393,44 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
 
  //------------------------POST---------------------------------------------------------------   
     }else if (strcmp(my_token.method, "POST") == 0){
-        //printf("%s\n", request_line);
-        printf("%s\n", my_token.method);
-        printf("%s\n", my_token.URI);
-        printf("%s\n", my_token.mime);
-        printf("%s\n", my_token.headers);
+        printf("Temp response: %s\n", temp_response);
+        if(strstr(temp_response,"Content-Type: application/x-www-form-urlencoded") != NULL){
+        printf("Content-type: Aplicacion, aceptado\n");
+        printf("URI: %s\n",my_token.URI);
+        temp_response = strstr(temp_response,"\r\n\r\n");
+        char* body = temp_response;
+        body += 2;
+        body = strtok(body,"=");
+        printf("Body: %s\n", body);
+        strcat(response, "HTTP/1.1 200 OK\n");
+      //  strcat(response, header_date);
+      //  strcat(response, "Server: TWS\n");
+      //  strcat(response, content_length);
+        strcat(response, content_type);
+        printf("response: %s\n",response);
+        send(client_socket, response, strlen(response), 0);
+        memcpy(response, "", sizeof(""));
+        }
+        //printf("%s\n", my_token.method);
+        //printf("%s\n", my_token.URI);
+        //printf("%s\n", my_token.mime);
+        //printf("%s\n", my_token.headers);
 
 
-        content_type = strstr(temp_response, "Content-Type:");
-        content_type = strtok(content_type,"\n");
-        content_type += 14;
-        printf("Ruta mandada: %s\n",my_token.URI);
-        printf("Content Type: %s\n", content_type); 
+      //  content_type = strstr(temp_response, "Content-Type:");
+      //  content_type = strtok(content_type,"\n");
+      //  content_type += 14;
+        //printf("Ruta mandada: %s\n",my_token.URI);
+       // printf("Content Type: %s\n", content_type); 
         
-        strcpy(response, "HTTP/1.1 200 OK\r\n\r\n");
-        printf("Sent response: %s\n",response);
-        
+       // strcpy(response, "HTTP/1.1 200 OK\r\n\r\n");
+      //  printf("Sent response: %s\n",response);
+       // send(client_socket,response,sizeof(response),0);
     //    char* body;
         //content_type = strtok(content_type, "\r\n\r\n");
         //content_type += 2; //BODY de la request      
        // while(temp_response != NULL){
-       printf("Body: %s\n",content_type);
+    //   printf("Body: %s\n",content_type);
       //  temp_response = strtok(NULL, "\n\n");
       //  }
 
@@ -426,7 +446,7 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
             send(client_socket, "HTTP/1.1 201 OK\n", 17, 0);
         }
 */
-
+   // 
     }else if(strcmp(my_token.method, "HEAD") == 0){
         printf("Recibí un HEAD\n");
     }else{
@@ -469,7 +489,7 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
     }
     fclose(logger_FILE);
 
-
+    //free(temp_response);
 
     
 };   
@@ -480,7 +500,7 @@ void launch(struct Server *my_server){
 
 
    //char* server_msg = "Trying INADDR_ANY...\nConnected to Telematis Web Server.";
-   
+   temp_response = malloc(sizeof(client_request)+100);
 
    while(1){
       printf("\n====== WAITING FOR CONNECTION ========\n");
@@ -495,8 +515,11 @@ void launch(struct Server *my_server){
       //write(client_socket, server_msg, strlen(server_msg));
 
       read(client_socket, client_request, sizeof(client_request));
+      
+      memcpy(temp_response,client_request,sizeof(client_request));
       //recv(client_socket, &client_request, sizeof(client_request), 0); 
-      printf("%s",client_request);
+      printf("%s\n",client_request);
+      printf("Size of client_request: %i\n",strlen(client_request));
       struct Token my_token;
       HTTP_handler(my_token, client_request, client_socket);
       
