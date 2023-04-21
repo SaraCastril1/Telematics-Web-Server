@@ -1,5 +1,5 @@
 # PROYECTO 1
-por :Sara Maria Castrillon, Manuela Tolosa y Simón Gómez
+por : Sara Maria Castrillon, Manuela Tolosa y Simón Gómez
 
 # **_Introducción_**
 
