@@ -14,7 +14,7 @@ char client_request[1048];
 char* temp_response;
 char* body_response;
 int mistake = 0;
-
+int flag = 0;
 
 
 struct Token{
@@ -31,7 +31,7 @@ struct Token{
 
 
 void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
-    printf("request_line dentro de la funcion, antes del malloc: %s\n",request_line);
+   // printf("request_line dentro de la funcion, antes del malloc: %s\n",request_line);
   //  temp_response = malloc(sizeof(request_line)*100);
    // printf("size of request_line: %i\n",sizeof(request_line));
    // memcpy(temp_response, request_line,sizeof(request_line));
@@ -68,6 +68,10 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
   
 
     my_token.URI++;
+    if(strlen(my_token.URI)==0){
+    my_token.URI = "resources/index.html";    
+    printf("URI: %s\n",my_token.URI);
+    }
     my_token.mime = strchr(my_token.URI, '.');
 
     //printf("RUTA ->%s\n", my_token.URI);
@@ -342,7 +346,6 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
 
     if (strcmp(my_token.method, "GET") == 0){
         //printf("Recibí un GET\n");
-
         FILE* file = fopen(my_token.URI, "r");
 
         if (file == NULL) {
@@ -400,17 +403,43 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
         temp_response = strstr(temp_response,"\r\n\r\n");
         char* body = temp_response;
         body += 2;
-        body = strtok(body,"=");
-        printf("Body: %s\n", body);
+        body = strtok(body,"&");
+        while(body != NULL){
+            printf("Key + value: %s\n",body);
+            body = strtok(NULL,"&");
+        }
+        //Ejemplo de una "action" dentro del HTML
+        if(strcmp(my_token.URI, "register") == 0){
+            flag = 1;
+            FILE* file = fopen("resources/register.html", "r");
+            fseek(file, 0, SEEK_END);
+            long fsize = ftell(file);
+            fseek(file, 0, SEEK_SET);
+            char* temp = malloc(sizeof(char) * (fsize+1));
+            fread(temp,fsize,1,file);
+            strcat(response, "HTTP/1.1 200 OK\r\n\r\n");
+            send(client_socket, response, strlen(response), 0);
+            send(client_socket, temp, fsize, 0);
+
+        }    
+
+        }else if(strstr(temp_response,"Content-Type: text/plain") != NULL){
+            printf("Content-type: Texto plano, aceptado\n");
+            printf("URI: %s\n",my_token.URI);
+            temp_response = strstr(temp_response,"\r\n\r\n");
+            char* body = temp_response;
+            body += 2;
+            printf("Body: %s\n",body);
+
+        }
         strcat(response, "HTTP/1.1 200 OK\n");
-      //  strcat(response, header_date);
-      //  strcat(response, "Server: TWS\n");
-      //  strcat(response, content_length);
         strcat(response, content_type);
         printf("response: %s\n",response);
+        if(flag == 0){
         send(client_socket, response, strlen(response), 0);
-        memcpy(response, "", sizeof(""));
         }
+        flag = 0;
+        memcpy(response, "", sizeof(""));
         //printf("%s\n", my_token.method);
         //printf("%s\n", my_token.URI);
         //printf("%s\n", my_token.mime);

@@ -192,3 +192,119 @@ Date: Fri, 21 Apr 2023 5:19:12 GMT
  INFO: GET requested on resources/test1/test1.html---> Succesfully atended
 Date: Fri, 21 Apr 2023 5:19:13 GMT
  INFO: GET requested on resources/test1/test1.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 5:43:40 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 5:49:49 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 5:49:53 GMT
+ INFO: POST requested on register/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 5:50:5 GMT
+ ERROR: GET requested on register/post---> File not found
+Date: Fri, 21 Apr 2023 5:50:5 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 5:50:5 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 6:3:24 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:4:57 GMT
+ ERROR: GET requested on register/post.html---> File not found
+Date: Fri, 21 Apr 2023 6:4:57 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 6:4:57 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 6:5:10 GMT
+ ERROR: GET requested on resources/post.html---> File not found
+Date: Fri, 21 Apr 2023 6:5:18 GMT
+ ERROR: POST requested on register/post.html---> File not found
+Date: Fri, 21 Apr 2023 6:9:56 GMT
+ INFO: POST requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:10:57 GMT
+ ERROR: GET requested on register/post.html---> File not found
+Date: Fri, 21 Apr 2023 6:10:57 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 6:10:57 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 6:11:2 GMT
+ ERROR: GET requested on resources/post.html---> File not found
+Date: Fri, 21 Apr 2023 6:11:5 GMT
+ ERROR: POST requested on resources/post.html---> File not found
+Date: Fri, 21 Apr 2023 6:11:15 GMT
+ ERROR: GET requested on resources/post.html---> File not found
+Date: Fri, 21 Apr 2023 6:13:7 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:13:23 GMT
+ INFO: POST requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:24:30 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:24:35 GMT
+ INFO: POST requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:25:4 GMT
+ INFO: POST requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:26:7 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:27:44 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:30:16 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:30:21 GMT
+ INFO: POST requested on register---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:30:42 GMT
+ INFO: POST requested on register---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:32:50 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:32:54 GMT
+ INFO: POST requested on register---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:34:30 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:34:35 GMT
+ INFO: POST requested on register---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:38:54 GMT
+ INFO: GET requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:38:57 GMT
+ INFO: POST requested on register---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:39:18 GMT
+ ERROR: GET requested on test1/test1.html---> File not found
+Date: Fri, 21 Apr 2023 6:39:19 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 6:39:19 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 6:39:28 GMT
+ ERROR: GET requested on resources/test1/test1.html---> File not found
+Date: Fri, 21 Apr 2023 6:39:28 GMT
+ ERROR: GET requested on resources/img/2017-12-19-19-22-29.jpg---> File not found
+Date: Fri, 21 Apr 2023 6:46:1 GMT
+ INFO: POST requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:50:18 GMT
+ INFO: POST requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:50:47 GMT
+ INFO: GET requested on resources/test1/test1.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 6:50:57 GMT
+ INFO: POST requested on resources/post.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 7:9:59 GMT
+ ERROR: GET requested on index.html---> File not found
+Date: Fri, 21 Apr 2023 7:10:0 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 7:10:0 GMT
+ ERROR: GET requested on resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 7:17:46 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Fri, 21 Apr 2023 7:18:0 GMT
+ ERROR: GET requested on resources/test1/test1---> File not found
+Date: Fri, 21 Apr 2023 7:18:0 GMT
+ ERROR: GET requested on resources/resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 7:18:0 GMT
+ ERROR: GET requested on resources/resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 7:18:5 GMT
+ ERROR: GET requested on resources/test1/test1.html---> File not found
+Date: Fri, 21 Apr 2023 7:18:5 GMT
+ ERROR: GET requested on resources/img/2017-12-19-19-22-29.jpg---> File not found
+Date: Fri, 21 Apr 2023 7:18:15 GMT
+ ERROR: GET requested on resources/test1/post.html---> File not found
+Date: Fri, 21 Apr 2023 7:18:15 GMT
+ ERROR: GET requested on resources/resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 7:18:15 GMT
+ ERROR: GET requested on resources/resources/error404.css---> File not found
+Date: Fri, 21 Apr 2023 7:18:21 GMT
+ ERROR: GET requested on resources/post.html---> File not found
+Date: Fri, 21 Apr 2023 7:18:25 GMT
+ ERROR: POST requested on register---> File not found
