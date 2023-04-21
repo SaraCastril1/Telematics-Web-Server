@@ -17,7 +17,7 @@ En resumen, este proyecto tiene como objetivo profundizar en la capa de aplicaci
 # **_Desarrollo_**
 **_casos_**
 
--Caso 1
+-Caso 1 ( Página web con algunos hipertextos y una imagen)
 ![Image text](https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/Prueba%20Imagen.jpg)
 
 **_Diagramas_**
