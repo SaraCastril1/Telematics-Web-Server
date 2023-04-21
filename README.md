@@ -15,6 +15,11 @@ Además, se estudiarán las tecnologías y herramientas utilizadas en el desarro
 En resumen, este proyecto tiene como objetivo profundizar en la capa de aplicación de la arquitectura TCP/IP y el protocolo HTTP, y aplicar estos conocimientos para desarrollar un servidor web funcional y eficiente.
 
 # **_Desarrollo_**
+**_casos_**
+
+**_Diagramas_**
+Diagrama de contexto 
+
 
 # **_Conclusiones_**
 
