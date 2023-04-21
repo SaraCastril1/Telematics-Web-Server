@@ -22,10 +22,7 @@ En resumen, este proyecto tiene como objetivo profundizar en la capa de aplicaci
 -Con cariño para el profe
 ![Image text](https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/Prueba%20Imagen.jpg)
 
--Caso 1 ( Página web con algunos hipertextos y una imagen)
-
-
--Caso 2 (Página web con algunos hipertextos y múltiples imágenes)
+-Caso 1 y 2 (Página web con algunos hipertextos y múltiples imágenes)
 ![Image text](https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/index.png)
 
 -Caso 3 (Página web que contiene un solo archivo de aproximadamente un tamaño de 1M )
@@ -61,6 +58,8 @@ En resumen, este proyecto tiene como objetivo profundizar en la capa de aplicaci
 # **_Conclusiones_**
 
 Del actual proyecto podemos llegar a varias conclusiones importantes como que la capa de aplicación de la arquitectura TCP/IP es fundamental para la comunicación entre aplicaciones en una red de computadoras. El protocolo HTTP es esencial para el funcionamiento de la mayoría de las aplicaciones web y permite la transferencia de datos entre servidores y clientes. La implementación de un servidor web permite entender el funcionamiento del protocolo HTTP y los conceptos fundamentales que lo rigen. Es importante estudiar los diferentes métodos HTTP, así como la transferencia de datos, la codificación de mensajes y la seguridad en la web, para desarrollar un servidor web funcional y eficiente. La exploración de tecnologías y herramientas utilizadas en el desarrollo de aplicaciones web modernas, como frameworks web y bases de datos, son importantes para desarrollar un servidor web robusto y escalable.
+
+Aparte de esto tuvimos varios problemas con el proyecto debido a que el lenguaje que usamos (C) se comportaba de manera diferent5e dependiendo del sistema operativo por ejemplo la implementacion de los hilos funcionaba sin mayor problema para las distribuciones de ARCH LINUX, mientras que en UBUNTU generaba errores de segmentación. 
 
 # **_Referencias_**
 - ⭐PROTOCOLO HTTP 🖥️ Requests y Responses con: GET, POST, PUT, PATCH y DELETE | DESARROLLO WEB 🌎. (2022, abril 3). https://youtu.be/l2MihYAj0Iw
