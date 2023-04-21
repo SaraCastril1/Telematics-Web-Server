@@ -14,7 +14,7 @@ char client_request[1048];
 char* temp_response;
 char* body_response;
 int mistake = 0;
-int flag = 0;
+int flag = 0; //esta flag es para activar y ejecutar correctamente el ACTION de un html
 
 
 struct Token{
@@ -344,7 +344,7 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
 
 // ---------------------------------------- GET --------------------------------------------------------
 
-    if (strcmp(my_token.method, "GET") == 0){
+    if (strcmp(my_token.method, "GET" ) == 0 ||strcmp(my_token.method, "HEAD") == 0){
         //printf("Recibí un GET\n");
         FILE* file = fopen(my_token.URI, "r");
 
@@ -389,17 +389,19 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
     
     fclose(file);
     send(client_socket, response, strlen(response), 0);
+    if(strcmp(my_token.method, "GET") == 0){
     send(client_socket, temp, fsize, 0);
-
+    }
+    
     free(temp);
     memcpy(response, "", sizeof(""));
 
  //------------------------POST---------------------------------------------------------------   
     }else if (strcmp(my_token.method, "POST") == 0){
-        printf("Temp response: %s\n", temp_response);
+      //  printf("Temp response: %s\n", temp_response);
         if(strstr(temp_response,"Content-Type: application/x-www-form-urlencoded") != NULL){
         printf("Content-type: Aplicacion, aceptado\n");
-        printf("URI: %s\n",my_token.URI);
+    //    printf("URI: %s\n",my_token.URI);
         temp_response = strstr(temp_response,"\r\n\r\n");
         char* body = temp_response;
         body += 2;
@@ -424,22 +426,23 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
         }    
 
         }else if(strstr(temp_response,"Content-Type: text/plain") != NULL){
+            printf("temp response: %s\n",temp_response);
             printf("Content-type: Texto plano, aceptado\n");
-            printf("URI: %s\n",my_token.URI);
+       //     printf("URI: %s\n",my_token.URI);
             temp_response = strstr(temp_response,"\r\n\r\n");
-            char* body = temp_response;
-            body += 2;
-            printf("Body: %s\n",body);
-
+            char* body_text = temp_response;
+            body_text += 2;
+            printf("Body: %s\n",body_text);
         }
         strcat(response, "HTTP/1.1 200 OK\n");
         strcat(response, content_type);
-        printf("response: %s\n",response);
+       // printf("response: %s\n",response);
         if(flag == 0){
         send(client_socket, response, strlen(response), 0);
         }
         flag = 0;
         memcpy(response, "", sizeof(""));
+        memcpy(temp_response, "", sizeof(""));
         //printf("%s\n", my_token.method);
         //printf("%s\n", my_token.URI);
         //printf("%s\n", my_token.mime);
@@ -476,9 +479,10 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
         }
 */
    // 
-    }else if(strcmp(my_token.method, "HEAD") == 0){
-        printf("Recibí un HEAD\n");
-    }else{
+    }//else if(strcmp(my_token.method, "HEAD") == 0){
+       // printf("Recibí un HEAD\n");
+      // }
+       else{
         perror("HTTP/1.1 400 Bad request -> Method");
     }
 
@@ -547,8 +551,8 @@ void launch(struct Server *my_server){
       
       memcpy(temp_response,client_request,sizeof(client_request));
       //recv(client_socket, &client_request, sizeof(client_request), 0); 
-      printf("%s\n",client_request);
-      printf("Size of client_request: %i\n",strlen(client_request));
+     // printf("%s\n",client_request);
+    //  printf("Size of client_request: %i\n",strlen(client_request));
       struct Token my_token;
       HTTP_handler(my_token, client_request, client_socket);
       
