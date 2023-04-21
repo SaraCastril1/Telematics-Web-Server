@@ -21,7 +21,7 @@ En resumen, este proyecto tiene como objetivo profundizar en la capa de aplicaci
 
 -Diagrama de contexto 
 
-(https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/Diagrama%20de%20contexto.drawio%20(1).png)
+![Image text](https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/Diagrama%20de%20contexto.drawio%20(1).png)
 
 
 # **_Conclusiones_**
