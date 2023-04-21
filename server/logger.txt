@@ -50,3 +50,49 @@ Date: Thu, 20 Apr 2023 17:30:59 GMT
  INFO: POST requested on resources/index.html---> Succesfully atended
 Date: Thu, 20 Apr 2023 17:35:38 GMT
  INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 17:40:13 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 17:50:14 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 17:50:58 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 17:51:22 GMT
+ ERROR: POST requested on resources/index.ht---> Bad Request
+Date: Thu, 20 Apr 2023 17:52:36 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 17:53:27 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:5:31 GMT
+ INFO: GET requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:6:50 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:7:42 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:9:52 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:12:53 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:17:48 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:18:26 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:20:7 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:30:16 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:31:43 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:34:9 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:51:23 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:52:41 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 18:55:18 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 19:4:12 GMT
+ INFO: POST requested on resources/index.html---> Succesfully atended
+Date: Thu, 20 Apr 2023 19:7:29 GMT
+ ERROR: GET requested on ---> File not found
+Date: Thu, 20 Apr 2023 19:7:29 GMT
+ ERROR: GET requested on resources/error404.css---> File not found

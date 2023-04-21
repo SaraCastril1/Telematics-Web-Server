@@ -11,6 +11,8 @@
 char response[BUFSIZ];
 //char buffer_response[262144] = {"\0"};
 char client_request[1048];
+char* temp_response;
+char* body_response;
 int mistake = 0;
 
 
@@ -20,6 +22,8 @@ struct Token{
     char* method;
     char* URI;
     char* version; 
+    char* headers;
+    char* body;
     char* mime;
 
 
@@ -27,9 +31,21 @@ struct Token{
 
 
 void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
+    //temp_response = malloc(strlen(request_line));
+    //strcpy(temp_response, request_line);
     my_token.method = strtok(request_line, " ");
     my_token.URI = strtok(NULL, " ");
     my_token.version = strtok(NULL, " "); 
+
+    /*if (strcmp(my_token.method, "POST") == 0){
+
+        while()
+        //printf("TEMP-> %s", temp_response)
+        //temp_response = malloc(sizeofrequest + 1);
+       my_token.headers = strtok(NULL, " ");
+       printf("\nESTE ES EL HEADER -> %s", my_token.headers);
+
+    }*/
 
 
 
@@ -374,11 +390,42 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
 
  //------------------------POST---------------------------------------------------------------   
     }else if (strcmp(my_token.method, "POST") == 0){
-        printf("%s\n", request_line);
+        //printf("%s\n", request_line);
         printf("%s\n", my_token.method);
         printf("%s\n", my_token.URI);
         printf("%s\n", my_token.mime);
+        printf("%s\n", my_token.headers);
 
+
+        content_type = strstr(temp_response, "Content-Type:");
+        content_type = strtok(content_type,"\n");
+        content_type += 14;
+        printf("Ruta mandada: %s\n",my_token.URI);
+        printf("Content Type: %s\n", content_type); 
+        
+        strcpy(response, "HTTP/1.1 200 OK\r\n\r\n");
+        printf("Sent response: %s\n",response);
+        
+    //    char* body;
+        //content_type = strtok(content_type, "\r\n\r\n");
+        //content_type += 2; //BODY de la request      
+       // while(temp_response != NULL){
+       printf("Body: %s\n",content_type);
+      //  temp_response = strtok(NULL, "\n\n");
+      //  }
+
+
+
+/*
+        FILE* file = fopen(my_token.URI, "r");
+
+        if (file == NULL) {
+            send(client_socket, "HTTP/1.1 400 Bad Request\n", 26, 0);
+            mistake = 2;
+        }else {
+            send(client_socket, "HTTP/1.1 201 OK\n", 17, 0);
+        }
+*/
 
     }else if(strcmp(my_token.method, "HEAD") == 0){
         printf("Recibí un HEAD\n");
@@ -407,6 +454,13 @@ void HTTP_handler(struct Token my_token,char* request_line, int client_socket){
             fputs(" requested on ", logger_FILE);
             fputs(my_token.URI, logger_FILE);
             fputs("---> File not found\n", logger_FILE);
+
+        }else if(mistake == 2){
+            fputs(" ERROR: ", logger_FILE);
+            fputs(my_token.method, logger_FILE);
+            fputs(" requested on ", logger_FILE);
+            fputs(my_token.URI, logger_FILE);
+            fputs("---> Bad Request\n", logger_FILE);
 
         }
         
