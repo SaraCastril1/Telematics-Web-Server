@@ -29,6 +29,7 @@ En resumen, este proyecto tiene como objetivo profundizar en la capa de aplicaci
 ![Image text](https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/descarga.png)
 
 -Caso 4 ( Página web que contiene múltiples archivos y que aproximadamente tiene un tamaño de 1MB)
+![Image text]()
 
 -prueba de request-post
 ![Image text](https://github.com/SaraCastril1/Telematics-Web-Server/blob/main/Casos/post.png)
